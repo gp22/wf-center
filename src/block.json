@@ -3,9 +3,9 @@
 	"apiVersion": 2,
 	"name": "wazframe/wf-center",
 	"version": "0.1.0",
-	"title": "Layout",
+	"title": "Center",
 	"category": "design",
-	"icon": "smiley",
+	"icon": "align-center",
 	"description": "Every Layout components.",
 	"supports": {
 		"html": false
@@ -17,7 +17,15 @@
 	"attributes": {
 		"size": {
 			"type": "string",
-			"default": "default"
+			"default": "small"
+		},
+		"intrinsic": {
+			"type": "boolean",
+			"default": false
+		},
+		"andText": {
+			"type": "boolean",
+			"default": false
 		}
 	}
 }

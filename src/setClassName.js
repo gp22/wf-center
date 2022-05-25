@@ -1,7 +1,7 @@
 const setClassName = (attributes) => {
-	const { size } = attributes;
+	const { andText, intrinsic, size } = attributes;
 
-	return `center ${size}`;
+	return `center ${size} ${andText && 'and-text'} ${intrinsic && 'intrinsic'}`;
 };
 
 export default setClassName;

@@ -1,7 +1,32 @@
 .center {
+	--space-1: 1rem;
+	--space-2: 2rem;
+	--space-3: 3rem;
 	box-sizing: content-box;
 	margin-inline: auto;
-	max-inline-size: 60ch;
-	padding-inline-end: var(--space, 1.5rem);
-	padding-inline-start: var(--space, 1.5rem);
+
+	&.and-text {
+		text-align: center;
+	}
+
+	&.intrinsic {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&.small {
+		padding-inline-end: var(--space-1);
+		padding-inline-start: var(--space-1);
+	}
+
+	&.medium {
+		padding-inline-end: var(--space-2);
+		padding-inline-start: var(--space-2);
+	}
+
+	&.large {
+		padding-inline-end: var(--space-3);
+		padding-inline-start: var(--space-3);
+	}
 }
